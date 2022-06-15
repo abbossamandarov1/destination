@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Destination</title>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <h1 class="text-center mb-2 display-3 fw-bolder">Who will be first</h1>
+        <form class="js-form" method="POST">
+            <div class="box w-50 d-flex align-items-center justify-content-between me-auto ms-auto">
+                <p class="mb-0 h4">Destination</p>
+                <input class="js-input form-control is-valid d-block ms-3" required placeholder="Enter in kilometers" aria-label="destination" type="number">
+                <button type="submit" class="btn btn-primary w-25">Click</button>
+            </div>
+            <span class="js-resultoverall text-center d-block mt-2 text-danger h4"></span>
+        </form>
+        <div class="row mt-5">
+            <div class="col-3">
+                <div class="card pt-3">
+                    <div class="w-50 h-50 mx-auto">
+                        <img src="img/person.png" width="50" height="50" class="card-img-top" alt="#" style=" width: 100%; height: fit-content; ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center h4">pedestrian</p>
+                        <p class="h5 card-text text-center">
+                            <span class="js-result-first"></span> in hour
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card pt-3">
+                    <div class="w-50 h-50 mx-auto">
+                        <img src="img/bicycle.png" width="50" height="50" class="card-img-top" alt="#" style=" width: 100%; height: fit-content; ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center h4">bicycle</p>
+                        <p class="h5 card-text text-center">
+                            <span class="js-result-second"></span> in hour
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card pt-3">
+                    <div class="w-50 h-50 mx-auto">
+                        <img src="img/car.png" width="50" height="50" class="card-img-top mb-4" alt="#" style=" width: 100%; height: fit-content; ">
+                    </div>
+                    <div class=" card-body ">
+                        <p class="card-text text-center h4 ">Car</p>
+                        <p class="h5 card-text text-center ">
+                            <span class="js-result-third "></span> in hour
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-3 ">
+                <div class="card pt-3 ">
+                    <div class="w-50 h-50 mx-auto ">
+                        <img src="img/plane.png " width="50 " height="50 " class="card-img-top mw-100 " style=" width: 100%; height: fit-content; " alt=" # ">
+                    </div>
+                    <div class="card-body text-center ">
+                        <p class="card-text text-center h4 ">Plane</p>
+                        <p class="h5 card-text text-center ">
+                            <span class="js-result-fourth "></span> in hour
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
